@@ -15,7 +15,7 @@
 
 /* Bail out if the "parent" plug-in insn't active */
 require_once ABSPATH . '/wp-admin/includes/plugin.php';
-if ( ! is_plugin_active( 'distributor-adapted/distributor.php' ) ) {
+if ( ! is_plugin_active( 'distributor/distributor.php' ) ) {
 	return;
 }
 require_once plugin_dir_path( __FILE__ ) . 'manager.php';
