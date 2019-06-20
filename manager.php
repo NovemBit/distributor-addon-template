@@ -2,13 +2,14 @@
 /**
  * Require add-on files and perform their initial setup
  *
- * @package distributor-{ Add-on name }
+ * @package distributor-{ Add-on slug }
  */
 
 /* Require plug-in files */
-require_once __DIR__ . '/includes/add-on-hub.php';
-require_once __DIR__ . '/includes/add-on-spoke.php';
+require_once __DIR__ . '/includes/{ Add-on slug }-hub.php';
+require_once __DIR__ . '/includes/{ Add-on slug }-spoke.php';
 
 /* Call the setup functions */
-\Distributor\AddOnHub\setup();
-\Distributor\AddOnSpoke\setup();
+\Distributor\{ Add - on namespace }Hub\setup();
+
+\Distributor\{ Add - on namespace }Spoke\setup();

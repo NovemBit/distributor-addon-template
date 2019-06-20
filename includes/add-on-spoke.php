@@ -2,10 +2,10 @@
 /**
  * Functions  performed in spoke
  *
- * @package distributor-{ Add-on name }
+ * @package distributor-{ Add-on slug }
  */
 
-namespace Distributor\AddOnSpoke;
+namespace Distributor\{ Add - on namespace }Spoke;
 
 /**
  * Setup actions

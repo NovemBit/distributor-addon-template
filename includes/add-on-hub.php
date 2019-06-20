@@ -2,10 +2,10 @@
 /**
  * Functions  performed in hub
  *
- * @package distributor-{ Add-on name }
+ * @package distributor-{ Add-on slug }
  */
 
-namespace Distributor\AddOnHub;
+namespace Distributor\{ Add - on namespace }Hub;
 
 /**
  * Setup actions

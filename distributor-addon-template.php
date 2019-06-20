@@ -7,10 +7,10 @@
  * Author URI:        https://novembit.com
  * License:           GPLv3 or later
  * Domain Path:       /lang/
- * GitHub Plugin URI: { Add-on repository URL }
+ * GitHub Plugin URI: { Add-on repository URI }
  * Text Domain:       distributor-{ Add-on prefix }
  *
- * @package distributor-{ Add-on name }
+ * @package distributor-{ Add-on slug }
  */
 
 /* Bail out if the "parent" plug-in insn't active */
