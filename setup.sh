@@ -25,6 +25,9 @@ sed -i "" -e "s|{ Add - on namespace }|$namespace|g" manager.php;
 sed -i "" -e "s|{ Add - on namespace }|$namespace|g" includes/add-on-hub.php;
 sed -i "" -e "s|{ Add - on namespace }|$namespace|g" includes/add-on-spoke.php;
 
+# Text domain correction [ For now will be set to slug ]
+sed -i "" -e "s|{ Add-on prefix }|$slug|g" distributor-addon-template.php;
+
 mv distributor-addon-template.php "distributor-$slug-addon.php";
 mv includes/add-on-hub.php "includes/$slug-hub.php";
 mv includes/add-on-spoke.php "includes/$slug-spoke.php";
