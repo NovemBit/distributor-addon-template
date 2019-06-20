@@ -21,9 +21,9 @@ sed -i "" -e "s|{ Add-on slug }|$slug|g" includes/add-on-hub.php;
 sed -i "" -e "s|{ Add-on slug }|$slug|g" includes/add-on-spoke.php;
 
 # Namespace correction
-sed -i "" -e "s|{ Add-on namespace }|$namespace|g" manager.php;
-sed -i "" -e "s|{ Add-on namespace }|$namespace|g" includes/add-on-hub.php;
-sed -i "" -e "s|{ Add-on namespace }|$namespace|g" includes/add-on-spoke.php;
+sed -i "" -e "s|{ Add - on namespace }|$namespace|g" manager.php;
+sed -i "" -e "s|{ Add - on namespace }|$namespace|g" includes/add-on-hub.php;
+sed -i "" -e "s|{ Add - on namespace }|$namespace|g" includes/add-on-spoke.php;
 
 mv distributor-addon-template.php "distributor-$slug-addon.php";
 mv includes/add-on-hub.php "includes/$slug-hub.php";
