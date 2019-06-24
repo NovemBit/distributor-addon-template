@@ -5,7 +5,7 @@
  * @package distributor-{ Add-on slug }
  */
 
-namespace Distributor\{ Add - on namespace }Hub;
+namespace DT\NbAddon\{ Add - on namespace }\Hub;
 
 /**
  * Setup actions

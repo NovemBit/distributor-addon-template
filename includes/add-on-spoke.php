@@ -5,7 +5,7 @@
  * @package distributor-{ Add-on slug }
  */
 
-namespace Distributor\{ Add - on namespace }Spoke;
+namespace DT\NbAddon\{ Add - on namespace }\Spoke;
 
 /**
  * Setup actions

@@ -10,6 +10,6 @@ require_once __DIR__ . '/includes/{ Add-on slug }-hub.php';
 require_once __DIR__ . '/includes/{ Add-on slug }-spoke.php';
 
 /* Call the setup functions */
-\Distributor\{ Add - on namespace }Hub\setup();
+\DT\NbAddon\{ Add - on namespace }\Hub\setup();
 
-\Distributor\{ Add - on namespace }Spoke\setup();
+\DT\NbAddon\{ Add - on namespace }\Spoke\setup();
