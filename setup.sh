@@ -4,6 +4,7 @@ read -p "Enter add-on description : " description;
 read -p "Enter add-on namespace (Without root e.g. ACF) : " namespace;
 url=$(git config --get remote.origin.url);
 slug=$(echo "$name" | tr '[:upper:]' '[:lower:]' | tr ' ' '-');
+strictslug=$(echo "$name" | tr '[:upper:]' '[:lower:]' | tr ' ' '_');
 
 # Name corrections
 sed -i "" -e "s|{ Add-on name }|$name|g" distributor-addon-template.php;
@@ -27,6 +28,7 @@ sed -i "" -e "s|{ Add - on namespace }|$namespace|g" includes/add-on-spoke.php;
 
 # Text domain correction [ For now will be set to slug ]
 sed -i "" -e "s|{ Add-on prefix }|$slug|g" distributor-addon-template.php;
+sed -i "" -e "s|{ Add - on strictslug }|$strictslug|g" distributor-addon-template.php;
 
 mv distributor-addon-template.php "distributor-$slug-addon.php";
 mv includes/add-on-hub.php "includes/$slug-hub.php";

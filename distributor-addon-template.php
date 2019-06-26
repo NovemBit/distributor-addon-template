@@ -16,12 +16,15 @@
 /**
  * Bootstrap function
  */
-function dt_wc_add_on_bootstrap() {
+function dt_{ Add - on strictslug }_add_on_bootstrap() {
 	if ( ! function_exists( '\Distributor\ExternalConnectionCPT\setup' ) ) {
 		if ( is_admin() ) {
-			add_action( 'admin_notices', function() {
-				printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( 'notice notice-error' ), esc_html( 'You need to have Distributor plug-in activated to run the {Add-on name}.', 'distributor-acf' ) );
-			} );
+			add_action(
+				'admin_notices',
+				function() {
+					printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( 'notice notice-error' ), esc_html( 'You need to have Distributor plug-in activated to run the {Add-on name}.', 'distributor-acf' ) );
+				}
+			);
 		}
 		return;
 	}
@@ -29,4 +32,4 @@ function dt_wc_add_on_bootstrap() {
 	require_once plugin_dir_path( __FILE__ ) . 'manager.php';
 }
 
-add_action( 'plugins_loaded', 'dt_wc_add_on_bootstrap' );
+add_action( 'plugins_loaded', 'dt_{ Add-on strictslug }_add_on_bootstrap' );
